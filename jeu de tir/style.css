@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.4s, color 0.4s; /* Pour un effet fluide */
+}
+
+
+:root {
+    --btn-start: rgb(118, 162, 118);
+    --btn-reset: rgb(204, 114, 114);
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --container-border: #000000;
+}
+
+
+
+[data-theme="dark"] {
+    --bg-color: #000115;
+    --text-color: #ffffff;
+    --container-border: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 800px;
+   
+  
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vh;
+    padding: 0 40px;
+    margin-top: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+button {
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.btn2 {
+    display: flex;
+    flex-direction: column;
+}
+.reset {
+    display: none;
+    background: var(--btn-reset) ;
+}
+.start {
+    background: var(--btn-start);
+    transition: transform 0.3s ease;
+}
+
+.start:hover {
+ /* 2. On applique la translation au survol */
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.container2  {
+    width: 625px;
+    height: 800px;
+    border: 2px solid var(--container-border);
+   position: relative;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: crosshair;
+     overflow: hidden;
+}
+
+
+ .target {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transition: all 0.3s ease;
+   
+    animation: animtarget 10s infinite;
+    }
+
+
+    @keyframes animtarget {
+        to{ transform: translate(-200px) rotate(90deg); }
+    }
+

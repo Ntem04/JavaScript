@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+      <div class="container">
+    <h2>Ma Todo Liste</h2>
+    <div class="todo-inputs">
+      
+      <input type="text" id="name" placeholder=" nom...">
+      <input type="text" id="contact"  placeholder="contact...">
+      <button onclick="addTodo()">Ajouter</button>
+    </div>
+    <div class="todo-inputs">
+      <input type="text" id="searchInput" placeholder="Rechercher une tâche...">
+      <button onclick="searchTodo()">Rechercher</button>
+    </div>
+    <div class="todo-list" id="todoList"></div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
