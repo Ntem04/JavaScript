@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr" data-theme>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="generateur.css" />
+    <title>Randon generateur</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <body>
+     <button class="mode">light/dark</button>
+    <div class="password-container">
+      <h2>Generateur de Mot de passe</h2>
+      <div class="input-container">
+        <input type="text" id="input" placeholder="Create password" class="input" readonly />
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </div>
+      <button class="btn">generer</button>
+      <div class="container-alert active">password copie</div>
+    </div>
+    <script src="generateur.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark-mode: #000;
+  --light-mode: #b6b2b2;
+}
+[data-theme="dark"] {
+  --dark-mode: #b6b2b2;
+  --light-mode: #000;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-mode);
+  color: var(--dark-mode);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.password-container {
+  background: pink;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+}
+
+.input-container {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+.input::placeholder {
+  letter-spacing: 0;
+}
+.fa-clone {
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.fa-clone:hover {
+  opacity: 0.7;
+  font-size: 24px;
+}
+
+.btn {
+  background: var(--dark-mode);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 10px 0;
+  font-size: 20px;
+  color: var(--light-mode);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.container-alert {
+  position: fixed;
+  width: 300px;
+  height: 50px;
+  background-color: lightgreen;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.active.container-alert {
+  right: -300px;
+}
+
+.mode {
+  padding: 10px 20px;
+  background-color: var(--dark-mode);
+  color: var(--light-mode);
+  border-radius: 10px;
+}
